@@ -28,7 +28,7 @@ public class BinaryString {
 public BinaryString(String bits) { this.bits=bits.toCharArray();}
 public int length() { return bits.length;}
 public void set (int index, char value) { bits[index] = value;}
-public char get (int index, char value) { return bits[index];}
+public char get (int index) { return bits[index];}
 public String toString() {
 	String result = " " ;
 	for (int i  = 0; i < bits.length; i++) {
