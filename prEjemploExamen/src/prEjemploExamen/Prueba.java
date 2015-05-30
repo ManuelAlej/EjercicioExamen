@@ -36,4 +36,9 @@ public class Prueba {
 		assertEquals('1', bitset3.get(1));
 		
 	}
+	
+	public void testGetOutOfLimitBit()
+	{
+		bitset4.get(56);
+	}
 }
