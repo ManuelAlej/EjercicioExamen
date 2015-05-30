@@ -27,7 +27,16 @@ public class BinaryString {
 
 public BinaryString(String bits) { this.bits=bits.toCharArray();}
 public int length() { return bits.length;}
-public void set (int index, char value) { bits[index] = value;}
+public void set (int index, char value) { 
+	
+	
+	try {
+	bits[index] = value;
+	} catch (RuntimeException e) {
+		throw new BinaryStringException();
+	}
+
+}
 public char get (int index) { 
 
 try {

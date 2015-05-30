@@ -36,9 +36,15 @@ public class Prueba {
 		assertEquals('1', bitset3.get(1));
 		
 	}
-	
+	@Test
 	public void testGetOutOfLimitBit()
 	{
 		bitset4.get(56);
+	}
+	@Test
+	
+	public void testSetOutOfLimitBit()
+	{
+		bitset4.set(56, '0');
 	}
 }
